@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Benchmark.uss?fileID=7433441132597879392&amp;guid=847ffbb738bd77b47a96fe0bf173d839&amp;type=3#Benchmark" />
+    <ui:VisualElement name="Root" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="BenchmarkInput" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-direction: row; flex-shrink: 1;">
+            <ui:TextField picking-mode="Ignore" label="BENCHMARK SIZE" value="10000" name="Count" keyboard-type="NumberPad" max-length="10" />
+            <ui:Button text=".Net Standard" display-tooltip-when-elided="true" name="MonoBehavior" />
+            <ui:Button text="Jobsystem" display-tooltip-when-elided="true" name="Jobsystem" />
+            <ui:Button text="Clear" display-tooltip-when-elided="true" name="Clear" style="background-color: rgb(221, 195, 195);" />
+        </ui:VisualElement>
+        <ui:ScrollView name="LogScrollView" horizontal-scroller-visibility="Hidden" style="flex-direction: column; flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>
